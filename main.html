@@ -1,0 +1,200 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> ENFILER B.Tech CSE Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="bg-mesh"></div>
+
+    <nav>
+        <a href="#" class="logo">&lt;ENFILER<span>Folio</span>/&gt;</a>
+        <button class="mobile-menu-btn" onclick="toggleMenu()">☰</button>
+        <ul class="nav-links">
+            <li><a href="#home" onclick="toggleMenu()">Home</a></li>
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header id="home">
+        <div class="hero-content">
+            <p class="greeting code-font">Hello, World!</p>
+            <h1>Building the Future<br>One Bit at a Time.</h1>
+            <div class="role-text code-font">
+                <span>I am a</span>
+                <span class="typing-effect">CSE Student & Full Stack Developer</span>
+            </div>
+            <p style="color: var(--text-muted); margin-bottom: 2rem; max-width: 500px;">
+                Passionate about algorithms, system design, and creating elegant solutions to complex problems. Constantly learning and evolving with technology.
+            </p>
+            <div class="cta-group">
+                <a href="#projects" class="btn btn-primary">View Work</a>
+                <a href="#contact" class="btn btn-secondary">Contact Me</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="about">
+        <div class="reveal">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-grid">
+                <div class="about-card">
+                    <div class="terminal-dots">
+                        <div class="dot red"></div>
+                        <div class="dot yellow"></div>
+                        <div class="dot green"></div>
+                    </div>
+                    <p class="code-font" style="color: var(--text-muted);">
+                        <span style="color: var(--secondary)">const</span> <span style="color: var(--primary)">student</span> = {<br>
+                        &nbsp;&nbsp;name: <span style="color: #a5d6ff">'Madhav Kashyap'</span>,<br>
+                        &nbsp;&nbsp;degree: <span style="color: #a5d6ff">'B.Tech CSE'</span>,<br>
+                        &nbsp;&nbsp;year: <span style="color: #ff5f56">3</span>,<br>
+                        &nbsp;&nbsp;passion: <span style="color: #a5d6ff">['Coding', 'AI', 'Web3']</span>,<br>
+                        &nbsp;&nbsp;status: <span style="color: #a5d6ff">'Open to Experience'</span><br>
+                        };
+                    </p>
+                </div>
+                <div>
+                    <h3 style="font-size: 1.5rem; margin-bottom: 1rem;">Tech Stack & Skills</h3>
+                    <p style="color: var(--text-muted); margin-bottom: 1.5rem;">
+                        I specialize in building scalable web applications and exploring efficient algorithms. My academic journey has equipped me with a strong foundation in computer science principles.
+                    </p>
+                    <div class="skills-container code-font">
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">C++</span>
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">Data Structures</span>
+                        <span class="skill-tag">React.js</span>
+                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">SQL</span>
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">Linux</span>
+                        <span class="skill-tag">Docker</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="reveal">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="card-image">
+                        <span class="tech-icon">⚡</span>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">AI Task Manager</h3>
+                        <p class="card-desc">Smart task management app that uses NLP to categorize and prioritize daily tasks automatically.</p>
+                        <div class="project-links code-font">
+                            <a href="#" class="link-icon">GitHub -></a>
+                            <a href="#" class="link-icon" style="color: var(--secondary)">Live Demo -></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="card-image">
+                        <span class="tech-icon">🔗</span>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Blockchain Voting</h3>
+                        <p class="card-desc">Decentralized voting system ensuring transparency and security using Ethereum smart contracts.</p>
+                        <div class="project-links code-font">
+                            <a href="#" class="link-icon">GitHub -></a>
+                            <a href="#" class="link-icon" style="color: var(--secondary)">Live Demo -></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="card-image">
+                        <span class="tech-icon">📊</span>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Algo Visualizer</h3>
+                        <p class="card-desc">Interactive web tool to visualize sorting and pathfinding algorithms in real-time.</p>
+                        <div class="project-links code-font">
+                            <a href="#" class="link-icon">GitHub -></a>
+                            <a href="#" class="link-icon" style="color: var(--secondary)">Live Demo -></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="reveal">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-section">
+                <div class="social-box">
+                    <h3>Let's Connect</h3>
+                    <p style="color: var(--text-muted); margin-top: 0.5rem;">
+                        Currently looking for summer internships and freelance opportunities.
+                    </p>
+                    <div class="social-links">
+                        <a href="https://github.com/enfiler" class="social-item">
+                            <span>GitHub</span>
+                            <span style="margin-left: auto;">↗</span>
+                        </a>
+                        <a href="https://www.instagram.com/ma_havvkashyap__" class="social-item">
+                            <span>Instagram</span>
+                            <span style="margin-left: auto;">↗</span>
+                        </a>
+                        <a href="#" class="social-item">
+                            <span>Email- madhavhrx2006@gmail.com</span>
+                            <span style="margin-left: auto;">@</span>
+                        </a>
+                    </div>
+                </div>
+                <form class="contact-form" onsubmit="event.preventDefault(); alert('Message sent (demo)!');">
+                    <div class="form-group">
+                        <input type="text" class="form-input" placeholder=" " required>
+                        <label class="form-label">Name</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-input" placeholder=" " required>
+                        <label class="form-label">Email</label>
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-input" placeholder=" " required></textarea>
+                        <label class="form-label">Message</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p class="code-font">Built with &hearts; and &lt;code/&gt; by Future Engineer.</p>
+        <p style="opacity: 0.5; margin-top: 5px;">&copy; 2023 All Rights Reserved via Enfiler Team.</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const nav = document.querySelector('.nav-links');
+            const btn = document.querySelector('.mobile-menu-btn');
+            nav.classList.toggle('active');
+            btn.innerHTML = nav.classList.contains('active') ? '✕' : '☰';
+        }
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if(entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+    </script>
+</body>
+</html>
